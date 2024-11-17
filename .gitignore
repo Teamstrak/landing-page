@@ -1,58 +1,64 @@
-  # compiled output
-/dist
-/node_modules
-/build
-
-/src/reset-database
-
 # Logs
 logs
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
+pnpm-debug.log*
 
-# OS
-.DS_Store
+# Dependency directories
+node_modules/
+.pnp
+.pnp.js
 
-# Tests
-/coverage
-/.nyc_output
+# Next.js build output
+.next/
+out/
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Next.js static files
+*.next
+.next/cache
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Testing
+coverage/
 
-# dotenv environment variable files
+# Production files
 .env
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
-# temp directory
-.temp
-.tmp
+# IDE-specific files
+.vscode/
+.idea/
+.DS_Store
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Miscellaneous
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+*.bak
+*.tmp
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+# MacOS-specific
+._*
+.Trashes
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux-specific
+.nfs*
+
+# Optional lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
